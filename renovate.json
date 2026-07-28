@@ -10,12 +10,12 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchUpdateTypes": ["minor", "patch", "lockFileMaintenance"]
+      "matchUpdateTypes": ["minor", "patch", "lockFileMaintenance"],
       "groupName": "npm dependencies"
     },
     {
       "matchManagers": ["npm"],
-      "matchUpdateTypes": ["major"]
+      "matchUpdateTypes": ["major"],
       "groupName": "npm major dependencies"
     }
   ],
