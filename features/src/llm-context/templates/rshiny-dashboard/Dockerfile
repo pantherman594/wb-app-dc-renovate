@@ -1,4 +1,4 @@
-FROM rocker/shiny:4.3.2
+FROM rocker/shiny:4.6.1@sha256:5292ba1cf829b8a1dc48679be3f03c90e3aaa4b725729730ecc2b73574f96649
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
