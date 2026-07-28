@@ -7,6 +7,16 @@
     {
       "matchManagers": ["devcontainer", "dockerfile", "docker-compose", "custom.regex"],
       "groupName": "devcontainer and docker updates"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["minor", "patch", "lockFileMaintenance"]
+      "groupName": "npm dependencies"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["major"]
+      "groupName": "npm major dependencies"
     }
   ],
   "customManagers": [
@@ -19,5 +29,6 @@
       "datasourceTemplate": "docker"
     }
   ],
-  "prHourlyLimit": 0
+  "prHourlyLimit": 0,
+  "ignorePaths": [".github/workflows/**"]
 }
