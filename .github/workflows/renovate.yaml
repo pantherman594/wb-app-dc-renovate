@@ -22,5 +22,4 @@ jobs:
           token: ${{ github.token }}
         env:
           RENOVATE_REPOSITORIES: ${{ github.repository }}
-          RENOVATE_ALLOW_SCRIPTS: true
           LOG_LEVEL: debug
