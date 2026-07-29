@@ -8,6 +8,7 @@ permissions:
   contents: write
   pull-requests: write
   actions: write
+  statuses: write
 
 jobs:
   renovate:
