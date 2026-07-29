@@ -40,7 +40,6 @@
       "datasourceTemplate": "docker"
     }
   ],
-  "prHourlyLimit": 0,
   "ignorePaths": [".github/workflows/**"],
   "copier": {
     "enabled": false
