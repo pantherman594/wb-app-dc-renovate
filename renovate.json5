@@ -21,7 +21,9 @@
     },
     */
     {
-      matchManagers: ['dockerfile'],
+      matchManagers: [
+        'dockerfile',
+      ],
       matchDepNames: [
         'cr.sas.com/viya-4-x64_oci_linux_2-docker/sas-analytics-pro', // private repo
         // below are all locally built
@@ -37,14 +39,18 @@
   customManagers: [
     {
       customType: 'regex',
-      fileMatch: ['^startupscript/butane/.*\\.sh$'],
+      managerFilePatterns: [
+        '^startupscript/butane/.*\\.sh$',
+      ],
       matchStrings: [
         '(?<depName>[\\w./_-]+):(?<currentValue>[\\w.-]+)@(?<currentDigest>sha256:[a-f0-9]{64})',
       ],
       datasourceTemplate: 'docker',
     },
   ],
-  ignorePaths: ['.github/workflows/**'],
+  ignorePaths: [
+    '.github/workflows/**',
+  ],
   copier: {
     enabled: false,
   },
