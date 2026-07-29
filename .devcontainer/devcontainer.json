@@ -1,5 +1,5 @@
 {
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-18-bullseye",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-18-bullseye@sha256:4d188a9f3ccb5b36c8d0d060c56802eb4025de665885ba6dddd2843a4f6597f8",
 	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
 	},
