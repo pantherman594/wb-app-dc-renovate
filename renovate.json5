@@ -2,7 +2,7 @@
   extends: [
     'config:best-practices',
   ],
-  commitMessageSuffix: ' in {{packageFile}}'
+  commitMessageSuffix: ' in {{packageFile}}',
   packageRules: [
     /*
     {
