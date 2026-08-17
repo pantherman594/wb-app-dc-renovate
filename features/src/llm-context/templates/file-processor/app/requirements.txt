@@ -4,5 +4,5 @@ google-cloud-storage==2.14.0
 google-cloud-bigquery==3.14.0
 pandas==2.1.4
 jsonschema==4.20.0
-pyarrow==14.0.2
+pyarrow==25.0.1
 openpyxl==3.1.2
