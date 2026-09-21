@@ -1,4 +1,4 @@
-FROM us-west2-docker.pkg.dev/shared-pub-buckets-94mvrf/workbench-artifacts/app-aou-jupyter:latest@sha256:a3750c09ed0a8cfebb650a1e8e0829cc11f596fc0c6042fecb27abb240ebc857
+FROM us-west2-docker.pkg.dev/shared-pub-buckets-94mvrf/workbench-artifacts/app-aou-jupyter:latest@sha256:766040d43d0c60f223c12f44ed58d39e4fd70117545d28a7bbb64071c71ce7c9
 
 # Install jupyter extensions
 RUN --mount=type=bind,from=jupyter-extension-builder,source=/dist,target=/tmp/extensions \
