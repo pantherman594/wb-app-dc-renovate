@@ -1,4 +1,4 @@
-FROM debian:12-slim
+FROM debian:12-slim@sha256:7c7b2c966bc9ee8cedfeef67e0e279108992c77681fa595db4a9d65c06ccc587
 
 RUN apt-get update --yes && \
     apt-get install -yq --no-install-recommends \
