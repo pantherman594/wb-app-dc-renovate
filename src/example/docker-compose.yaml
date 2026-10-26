@@ -5,7 +5,7 @@ services:
     shm_size: "${templateOption:shmSize}"
     mem_limit: "${templateOption:memoryLimit}"
     # This can be either a pre-existing image or built from a Dockerfile
-    image: "quay.io/jupyter/base-notebook"
+    image: "quay.io/jupyter/base-notebook@sha256:24c361de0719fc1f07af93b65933a01e82d3b7c75f01869d5f0003f104ad52e6"
     # build:
     #   context: .
     restart: always
