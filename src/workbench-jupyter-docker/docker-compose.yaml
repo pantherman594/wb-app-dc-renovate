@@ -4,7 +4,7 @@ services:
     container_name: "application-server"
     shm_size: "${templateOption:shmSize}"
     mem_limit: "${templateOption:memoryLimit}"
-    image: "us-central1-docker.pkg.dev/verily-workbench-public/apps/workbench-jupyter:latest"
+    image: "us-central1-docker.pkg.dev/verily-workbench-public/apps/workbench-jupyter:latest@sha256:98fb63b8ee2445e8b8de3e83df9884a23ca3aa6418028237679a0687d6e5e329"
     user: "jupyter:${DOCKER_GID}"
     restart: always
     volumes:
