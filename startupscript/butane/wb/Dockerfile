@@ -20,7 +20,7 @@
 # workspace context in the mounted directory to maintain state between
 # container executions.
 
-FROM eclipse-temurin:17-jre-jammy
+FROM eclipse-temurin:17-jre-jammy@sha256:aa6381384f8db99762fa7d0d3c2b5de58874e5f12c96df4c13a1455376ae0ed1
 
 # Install jq for JSON processing (used by wb CLI)
 RUN apt-get update && apt-get install -y jq

@@ -4,7 +4,7 @@ services:
     container_name: "application-server"
     shm_size: "${templateOption:shmSize}"
     mem_limit: "${templateOption:memoryLimit}"
-    image: "caddy:2.11-alpine"
+    image: "caddy:2.11-alpine@sha256:003a97808e781aa9f7e75cc2f43d34d461099031faf5e20faefb9f61126836f0"
     restart: always
     volumes:
       - ./caddy:/etc/caddy:ro
@@ -52,7 +52,7 @@ services:
       - playground
 
   db:
-    image: "postgres:18-alpine"
+    image: "postgres:18-alpine@sha256:b6972e1115a4ff8eba5d7f7d19184926d1e16d7d1136ae1e1a7ebf286da0f015"
     restart: always
     environment:
       POSTGRES_USER: "playground_user"
