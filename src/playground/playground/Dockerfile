@@ -1,4 +1,4 @@
-FROM golang:1.25-alpine AS build
+FROM golang:1.25-alpine@sha256:1ae0735f00daffa3aaf1363a5184c0d2dc55c78e3db4ec70241cdac97bf84b59 AS build
 
 WORKDIR /app
 
@@ -8,7 +8,7 @@ COPY . .
  
 RUN go build -o /playground .
 
-FROM alpine:latest
+FROM alpine:latest@sha256:f59abe656b692d901e184be3445e084786602108599d2a51d229c0f5a48c71bf
 
 # Install Node.js, npm, Docker CLI, docker-compose, buildx, ttyd, bash, and devcontainer CLI
 RUN apk add --no-cache nodejs npm docker-cli docker-cli-compose docker-cli-buildx ttyd bash && \
